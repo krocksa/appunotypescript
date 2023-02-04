@@ -5,7 +5,7 @@ import { FunctionalComponent } from './Components/FunctionalComponent';
 function App() {
   return (
     <>
-      <FunctionalComponent name={"KROCKSA"} />
+      <FunctionalComponent name='KROCKSA' />
     </>
   );
 }
