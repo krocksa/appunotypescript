@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { FunctionalComponent } from "./Components/FunctionalComponent";
+import { ChildrenComponent } from './Components/ChildrenComponent';
 function App() {
   return (
     <>
-      <FunctionalComponent name='Krocksa'/>
+     < ChildrenComponent firstName='Roger' lastName='Salgado' age={30} />
     </>
   );
 }
