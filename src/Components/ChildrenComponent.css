@@ -2,3 +2,7 @@
     text-align: center;
     color: darkred;
 }
+.boton{
+    display: flex;
+    margin: auto;
+}
