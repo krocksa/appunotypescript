@@ -1,17 +1,11 @@
 import React from 'react';
 import './App.css';
-import { ChildrenComponent } from './Components/ChildrenComponent';
+import { Navbar } from './Components/Navbar/Navbar';
+
 function App() {
   return (
     <>
-     < ChildrenComponent 
-     firstName='Roger' 
-     lastName='Salgado'
-     clickReturnName={(Name)=>{
-      console.log(Name);
-      
-     }}
-    />
+    <Navbar/>
     </>
   );
 }
