@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './NavPage.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,8 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AppleIcon from '@mui/icons-material/Apple';
+import SearchIcon from '@mui/icons-material/Search';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Mac', 'IPad', 'IPhone' , 'Watch' , 'AirPods' , 'TV y Casa' , 'Entretenimiento' , 'Soporte' , 'Donde Comprar'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavPage() {
@@ -38,22 +40,9 @@ function NavPage() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container className='container'>
         <Toolbar disableGutters>
           <AppleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 1,
-              display: { xs: 'none', md: 'flex' },
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -91,25 +80,6 @@ function NavPage() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -125,7 +95,10 @@ function NavPage() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <SearchIcon sx={{ 
+                    fontSize: 'xx-large',
+                    color: 'white', 
+                    }}/>
               </IconButton>
             </Tooltip>
             <Menu
