@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { NavPage } from './Components/Nav-bar/Nav-bar';
+import NavPage from './Components/NavPage';
 
 function App() {
   return (
     <>
-    <NavPage/>
+      <NavPage/>
     </>
   );
 }
